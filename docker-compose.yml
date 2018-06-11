@@ -1,0 +1,20 @@
+version: '3.6'
+services:
+  squid:
+    build: src/squid/.
+    ports:
+      - '3128:3128'
+    volumes:
+      - type: bind
+        source: ./cache
+        target: /cache
+      - type: bind
+        source: ./logs
+        target: /logs
+    network_mode: host
+    restart: always
+  iptables:
+    build: src/iptables/.
+    privileged: yes
+    network_mode: host
+    restart: always

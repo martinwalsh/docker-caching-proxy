@@ -1,0 +1,6 @@
+/cache/
+/logs/
+/.env/
+/.benchmarks/
+/.pytest_cache/
+*.swp
