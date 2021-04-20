@@ -12,7 +12,7 @@ ipaddress==1.0.22
 more-itertools==4.2.0
 pathlib==1.0.1
 pluggy==0.6.0
-py==1.5.3
+py==1.10.0
 py-cpuinfo==4.0.0
 pytest==3.6.1
 pytest-benchmark==3.1.1
